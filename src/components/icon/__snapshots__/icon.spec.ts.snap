@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TIcon renders correctly 1`] = `"<span class=\\"t-icon t-icon_name_test\\"><svg class=\\"t-icon__svg\\"><use xlink:href=\\"#t-icon-test\\"></use></svg></span>"`;

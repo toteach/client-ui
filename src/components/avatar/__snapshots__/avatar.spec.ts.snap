@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TAvatar renders correctly 1`] = `"<figure class=\\"t-avatar\\"><img src=\\"https://www.fillmurray.com/64/64\\" alt=\\" \\" class=\\"t-avatar__image\\"></figure>"`;

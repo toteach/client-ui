@@ -24,9 +24,6 @@
     }
   },
   "globals": {
-    "__config": "readonly",
-    "__stage": "readonly",
-    "__vcs": "readonly",
     "VERSION": "readonly"
   },
   "overrides": [
@@ -34,6 +31,14 @@
       "files": ["src/store/**/*.ts"],
       "rules": {
         "@typescript-eslint/typedef": "off"
+      }
+    },
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+      ],
+      "env": {
+        "jest": true
       }
     }
   ]

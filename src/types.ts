@@ -1,41 +1,29 @@
-export type DeepPartial<T> = {
-  [P in keyof T]?: T[P] extends Array<infer U>
-    ? Array<DeepPartial<U>>
-    : T[P] extends ReadonlyArray<infer U>
-      ? ReadonlyArray<DeepPartial<U>>
-      : DeepPartial<T[P]>
-};
+export type TColorModifiers =
+    'white' |
+    'black' |
+    'light' |
+    'dark' |
+    'primary' |
+    'info' |
+    'success' |
+    'warning' |
+    'danger' |
+    'text';
 
-export type Nullable<T> = T | null;
+export type TSizes =
+    'small' |
+    'medium' |
+    'large';
 
-export type Timestamp = number;
+export type TPositions =
+    'top' |
+    'left' |
+    'bottom' |
+    'right';
 
-export type Uuid = string;
+export type TStates =
+    'active' |
+    'focus' |
+    'hover';
 
-export interface SimpleObject<V> {
-  [key: string]: V;
-}
 
-export interface SimpleClassList {
-  [key: string]: boolean;
-}
-
-export interface SimpleStyleList {
-  [key: string]: string | undefined;
-}
-
-export interface KeyboardEventTargetInput extends KeyboardEvent {
-  target: HTMLInputElement;
-}
-
-export interface MouseInputTargetInput extends MouseEvent {
-  target: HTMLInputElement;
-}
-
-export interface InputEventTargetInput extends InputEvent {
-  target: HTMLInputElement;
-}
-
-export interface FocusEventTargetInput extends FocusEvent {
-  target: HTMLInputElement;
-}

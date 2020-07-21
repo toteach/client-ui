@@ -1,0 +1,9 @@
+<svg
+     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <g class="t-icon__group">
+        <path fill="currentColor" d="M256 184a72 72 0 1 0 72 72 72 72 0 0 0-72-72z" class="t-icon__item t-icon__item--secondary"></path>
+        <path fill="currentColor"
+              d="M432 184a72 72 0 1 0 72 72 72 72 0 0 0-72-72zm-352 0a72 72 0 1 0 72 72 72 72 0 0 0-72-72z"
+              class="t-icon__item t-icon__item--primary"></path>
+    </g>
+</svg>

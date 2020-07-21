@@ -1,0 +1,136 @@
+$small-desktop: 960px;
+$large-desktop: 1200px;
+$handheld: 768px;
+$handhelds-landscape: 1024px;
+$mobile: 640px;
+$mobile-landscape: 480px;
+
+@mixin desktop-large() {
+  @media only screen and (min-width: $large-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media only screen and (min-width: $small-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-small() {
+  @media only screen and (max-width: $small-desktop) {
+    @content;
+  }
+}
+
+@mixin handhelds() {
+  @media only screen and (max-width: $handheld) {
+    @content;
+  }
+}
+
+@mixin handhelds-landscape() {
+  @media only screen and (min-device-width: $handheld) and (max-device-width: $handhelds-landscape) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-portrait() {
+  @media only screen and (max-width: $mobile) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape() {
+  @media only screen and (min-width: 320px) and (max-width: $mobile-landscape) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin responsive-debug($position) {
+  &::before {
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    padding: 10px;
+    font-family: var(--family-monospace);
+    font-size: 11px;
+    color: #333;
+    content: " ";
+    background: #eed100;
+
+    @if $position == top-left {
+      top: 0;
+      left: 0;
+    }
+
+    @if $position == top-right {
+      top: 0;
+      right: 0;
+    }
+
+    @if $position == bottom-right {
+      right: 0;
+      bottom: 0;
+    }
+
+    @if $position == bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @include desktop-large() {
+    &::before {
+      content: "large-desktop";
+    }
+  }
+
+  @include desktop-small() {
+    &::before {
+      content: "small-desktop";
+    }
+  }
+
+  @include desktop() {
+    &::before {
+      content: "desktop";
+    }
+  }
+
+  @include handhelds-landscape() {
+    &::before {
+      content: "handhelds-landscape";
+    }
+  }
+
+  @include handhelds() {
+    &::before {
+      content: "handhelds";
+    }
+  }
+
+  @include mobile-landscape() {
+    &::before {
+      content: "mobile-landscape";
+    }
+  }
+
+  @include mobile-portrait() {
+    &::before {
+      content: "mobile-portrait";
+    }
+  }
+
+  @include mobile() {
+    &::before {
+      content: "mobile";
+    }
+  }
+}

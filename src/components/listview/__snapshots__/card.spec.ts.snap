@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TCard image renders correctly 1`] = `
+"<article class=\\"t-card\\">
+  <div class=\\"t-card__image\\">
+    <figure class=\\"t-card__image-figure\\"><img src=\\"https://www.fillmurray.com/640/360\\" class=\\"t-card__image-element\\"></figure>
+  </div>
+  <!---->
+  <!---->
+  <!---->
+</article>"
+`;
+
+exports[`TCard renders correctly 1`] = `
+"<article class=\\"t-card\\">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+</article>"
+`;
+
+exports[`TCard set image scale on hover renders correctly 1`] = `
+"<article class=\\"t-card t-card_has_image-scale-on-hover\\">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+</article>"
+`;
+
+exports[`TCard title renders correctly 1`] = `
+"<article class=\\"t-card\\">
+  <!---->
+  <header class=\\"t-card__header\\">
+    <h3 class=\\"t-card__title\\">
+      Title
+    </h3>
+  </header>
+  <!---->
+  <!---->
+</article>"
+`;

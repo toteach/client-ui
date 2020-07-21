@@ -1,0 +1,40 @@
+html,
+body {
+  --body-size: 16px;
+  --body-min-width: 300px;
+  --body-background: rgb(246, 242, 239);
+  --body-family: var(family-sans-serif);
+
+  min-width: var(--body-min-width);
+  height: 100%;
+  font-size: var(--body-size);
+  color: var(--text-color);
+  background-color: var(--body-background);
+  text-rendering: var(--render-mode);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--family-sans-serif);
+}
+
+pre,
+code {
+  font-family: var(--family-monospace);
+}
+
+pre {
+  color: var(--grey-light);
+}

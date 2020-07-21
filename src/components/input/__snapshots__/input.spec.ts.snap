@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TInput renders correctly 1`] = `
+"<div class=\\"t-control t-control_type_text\\"><input class=\\"t-control__input\\">
+  <!---->
+</div>"
+`;
