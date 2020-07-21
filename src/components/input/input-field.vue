@@ -15,8 +15,7 @@ import {
 
 import {
   TColorModifiers,
-} from '@/types';
-
+} from '../../types';
 import TIcon from '../icon/icon.vue';
 
 @Component({

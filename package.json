@@ -1,7 +1,7 @@
 {
   "name": "@toteach/ui",
   "description": "Lightweight UI components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "author": "ToTeach.io",
   "bugs": {
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/toteach/ui.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "serve": "vue-cli-service serve",

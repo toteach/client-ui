@@ -14,7 +14,7 @@ import {
 
 import {
   TColorModifiers,
-} from '@/types';
+} from '../../types';
 
 @Component({
   name: 'TDropdownItem',

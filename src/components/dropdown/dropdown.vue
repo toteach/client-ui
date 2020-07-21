@@ -26,7 +26,7 @@ import {
 import {
   TPositions,
   TSizes,
-} from '@/types';
+} from '../../types';
 
 @Component({
   name: 'TDropdown',

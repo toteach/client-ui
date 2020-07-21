@@ -26,8 +26,7 @@ import {
 import {
   TPositions,
   TSizes,
-} from '@/types';
-
+} from '../../types';
 import TIcon from '../icon/icon.vue';
 
 type InputNativeTypes =

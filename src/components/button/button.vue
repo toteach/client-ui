@@ -33,8 +33,7 @@ import {
   TColorModifiers,
   TPositions,
   TSizes, TStates,
-} from '@/types';
-
+} from '../../types';
 import TIcon from '../icon/icon.vue';
 
 type ButtonLinkTags = 'a' | 'button' | 'input' | 'router-link' | 'nuxt-link';

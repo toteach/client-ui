@@ -14,7 +14,7 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
-import { TSizes } from '@/types';
+import { TSizes } from '../../types';
 
 @Component({
   name: 'TLoader',

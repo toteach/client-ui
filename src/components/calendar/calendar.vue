@@ -61,7 +61,8 @@ import {
 } from 'vue-property-decorator';
 
 import TButton from '@/components/button/button.vue';
-import { TSizes } from '@/types';
+
+import { TSizes } from '../../types';
 
 @Component({
   name: 't-calendar',
