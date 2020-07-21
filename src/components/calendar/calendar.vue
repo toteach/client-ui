@@ -60,7 +60,7 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
-import TButton from '@/components/button/button.vue';
+import TButton from '../button/button.vue';
 
 import { TSizes } from '../../types';
 
