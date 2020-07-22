@@ -36,9 +36,9 @@ type Gender =
   Genders.unknown;
 
 @Component({
-  name: 'TAvatar',
+  name: 'TAvatarC',
 })
-export default class TIcon extends Vue {
+export default class TAvatar extends Vue {
 
   @Prop({ type: String })
   public size?: TSizes;

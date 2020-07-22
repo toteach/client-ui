@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <h2>Inputs</h2>
+    <t-avatar first-name="X" last-name="Y" size="128" />
     <t-input-field type="danger">
       <t-input type="search"
                size="medium"
