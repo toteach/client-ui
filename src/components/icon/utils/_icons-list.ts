@@ -7,7 +7,7 @@ const iconsRequire = (ctx: RequireContext): string[] => {
 };
 
 const icons = iconsRequire(require.context(
-  '!@toteach-io/svg-sprite-loader?symbolId=t-icon-[name]!@/assets/icons/',
+  '!@toteach/svg-sprite-loader?symbolId=t-icon-[name]!@/assets/icons/',
   true,
   /\.svg$/u,
 ));

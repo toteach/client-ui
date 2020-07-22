@@ -32,7 +32,7 @@
   "dependencies": {
     "@toteach-io/eslint-config-toteach-io": "^0.1.0",
     "@toteach-io/stylelint-config-toteach-io": "^0.1.0",
-    "@toteach-io/svg-sprite-loader": "^4.1.6",
+    "@toteach/svg-sprite-loader": "^4.1.6",
     "css-loader": "^3.4.0",
     "json-ref-lite": "^1.1.0",
     "json-templater": "^1.2.0",
