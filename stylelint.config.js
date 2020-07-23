@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    '@toteach-io/stylelint-config-toteach-io',
+    '@toteach/stylelint-config',
   ],
   rules: {
     'selector-max-type': 1,

@@ -1,9 +1,9 @@
 {
   "name": "@toteach/ui",
   "description": "Lightweight UI components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
-  "author": "ToTeach.io",
+  "author": "toteach.io",
   "bugs": {
     "url": "https://github.com/toteach/ui/issues"
   },
@@ -30,9 +30,9 @@
     "lint:stylelint": "stylelint --cache \"src/**/*.{vue,scss}\" && exit 0"
   },
   "dependencies": {
-    "@toteach/eslint-config": "^0.0.1",
-    "@toteach/stylelint-config": "^0.0.1",
-    "@toteach/svg-sprite-loader": "^0.0.1",
+    "@toteach/eslint-config": "^0.0.2",
+    "@toteach/stylelint-config": "^0.0.2",
+    "@toteach/svg-sprite-loader": "^0.0.2",
     "css-loader": "^3.4.0",
     "json-ref-lite": "^1.1.0",
     "json-templater": "^1.2.0",
