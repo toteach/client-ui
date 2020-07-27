@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TCalendar renders correctly 1`] = `
+"<div class=\\"t-calendar\\">
+  <header class=\\"t-calendar__month\\"><button class=\\"t-button t-calendar__month-button t-button_size_medium t-button_type_text\\"><span class=\\"t-icon t-button__icon t-icon_name_arrow-left\\"><svg class=\\"t-icon__svg\\"><use xlink:href=\\"#t-icon-arrow-left\\"></use></svg></span>
+      <!----></button> <time datetime=\\"2019-02\\" class=\\"t-calendar__month-datetime\\">May 11-17</time> <button class=\\"t-button t-calendar__month-button t-button_size_medium t-button_type_text\\"><span class=\\"t-icon t-button__icon t-icon_name_arrow-right\\"><svg class=\\"t-icon__svg\\"><use xlink:href=\\"#t-icon-arrow-right\\"></use></svg></span>
+      <!----></button></header>
+  <section class=\\"t-calendar__days-of-week\\">
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Su
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Mo
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Tu
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      We
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Th
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Fr
+    </div>
+    <div class=\\"t-calendar__days-of-week-item\\">
+      Sa
+    </div>
+  </section>
+  <div class=\\"t-calendar__days-grid\\"><button class=\\"t-calendar__day-button\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        1
+      </div>
+      <div class=\\"t-calendar__day-button-event-indicator\\"></div>
+    </button><button class=\\"t-calendar__day-button\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        2
+      </div>
+      <!---->
+    </button><button class=\\"t-calendar__day-button t-calendar__day-button_is_today\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        3
+      </div>
+      <!---->
+    </button><button class=\\"t-calendar__day-button\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        4
+      </div>
+      <!---->
+    </button><button class=\\"t-calendar__day-button\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        5
+      </div>
+      <!---->
+    </button><button class=\\"t-calendar__day-button t-calendar__day-button_is_active\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        6
+      </div>
+      <div class=\\"t-calendar__day-button-event-indicator\\"></div>
+    </button><button class=\\"t-calendar__day-button\\">
+      <div class=\\"t-calendar__day-button-label\\">
+        7
+      </div>
+      <!---->
+    </button></div>
+</div>"
+`;

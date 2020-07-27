@@ -9,6 +9,8 @@ import {
   Icon,
   Input,
   ListView,
+  Pagination,
+  ProgressBarRadial,
   Spinner,
 } from './components';
 
@@ -22,6 +24,8 @@ const ToTeach = {
     Vue.use(Icon);
     Vue.use(Input);
     Vue.use(ListView);
+    Vue.use(Pagination);
+    Vue.use(ProgressBarRadial);
     Vue.use(Spinner);
   },
 };

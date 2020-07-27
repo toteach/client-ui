@@ -74,6 +74,7 @@ export default class TDropdown extends Vue {
         }
       }
     }
+
     // All children from trigger
     if (this.$refs.trigger) {
       const children = this.$refs.trigger.querySelectorAll('*');
@@ -120,6 +121,7 @@ export default class TDropdown extends Vue {
     --dropdown-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 5px 20px rgba(0, 0, 0, 0.02);
 
     position: relative;
+    display: inline-block;
     transition: all 1s;
 
     &__menu {

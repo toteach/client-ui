@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TPagination renders correctly 1`] = `
+"<div class=\\"t-pagination\\">
+  <t-button-stub tag=\\"button\\" type=\\"text\\" nativetype=\\"button\\" class=\\"t-pagination__button\\">
+
+  </t-button-stub>
+</div>"
+`;

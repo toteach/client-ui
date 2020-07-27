@@ -36,7 +36,7 @@ type Gender =
   Genders.unknown;
 
 @Component({
-  name: 'TAvatarC',
+  name: 'TAvatar',
 })
 export default class TAvatar extends Vue {
 
@@ -96,10 +96,10 @@ export default class TAvatar extends Vue {
   border-radius: var(--avatar-border-radius);
 
   &__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
     border-radius: var(--avatar-border-radius);
   }
 
@@ -135,6 +135,10 @@ export default class TAvatar extends Vue {
 
     &_128 {
       --avatar-size: 128px;
+    }
+
+    &_160 {
+      --avatar-size: 160px;
     }
   }
 

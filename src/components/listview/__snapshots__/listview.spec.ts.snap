@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TListView renders correctly 1`] = `
+"<div class=\\"t-list-view\\">
+  <!---->
+  <header class=\\"t-list-view__header\\">
+    <!---->
+  </header>
+  <section class=\\"t-list-view__items\\">
+    <!---->
+  </section>
+  <section class=\\"t-list-view__pagination\\">
+    <!---->
+  </section>
+  <footer class=\\"t-list-view__footer\\">
+    <!---->
+  </footer>
+</div>"
+`;

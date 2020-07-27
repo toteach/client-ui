@@ -3,7 +3,7 @@ import Vue from 'vue';
 
 import TCalendar from './calendar.vue';
 
-describe('TButton', () => {
+describe('TCalendar', () => {
   let wrapper: Wrapper<Vue>;
   beforeEach(() => {
     wrapper = mount(TCalendar, {

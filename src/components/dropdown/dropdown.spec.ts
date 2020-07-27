@@ -1,15 +1,15 @@
 import { mount, Wrapper } from '@vue/test-utils';
 import Vue from 'vue';
 
-import TLoader from './dropdown.vue';
+import TDropdown from './dropdown.vue';
 
-describe('TIcon', () => {
+describe('TDropdown', () => {
   let wrapper: Wrapper<Vue>;
   beforeEach(() => {
-    wrapper = mount(TLoader, {});
+    wrapper = mount(TDropdown, {});
   });
   it('is initialized', () => {
-    expect(wrapper.name()).toBe('TLoader');
+    expect(wrapper.name()).toBe('TDropdown');
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
   it('renders correctly', () => {

@@ -64,7 +64,7 @@ import { TSizes } from '../../types';
 import TButton from '../button/button.vue';
 
 @Component({
-  name: 't-calendar',
+  name: 'TCalendar',
   components: {
     TButton,
   },

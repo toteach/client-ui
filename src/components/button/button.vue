@@ -63,9 +63,6 @@ export default class TButton extends Vue {
   @Prop({ type: String })
   public icon?: string;
 
-  @Prop({ type: Boolean })
-  public loading?: boolean;
-
   @Prop({ type: String })
   public iconPosition?: TPositions;
 

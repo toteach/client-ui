@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TDropdown renders correctly 1`] = `
+"<div class=\\"t-dropdown\\">
+  <div role=\\"button\\" class=\\"t-dropdown__trigger\\"></div>
+  <!---->
+</div>"
+`;

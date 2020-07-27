@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TIcon renders correctly 1`] = `
+"<div class=\\"t-loader\\">
+  <div class=\\"t-loader__spinner\\"></div>
+</div>"
+`;
