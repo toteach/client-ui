@@ -74,6 +74,13 @@
                    icon-position="left"
                    icon="logo-square" />
         </t-input-field>
+        <t-input-field :label="`Input label`">
+          <t-input type="email"
+                   size="medium"
+                   :placeholder="`Placeholder`"
+                   icon-position="left"
+                   icon="logo-square" />
+        </t-input-field>
       </div>
     </section>
 
