@@ -1,5 +1,7 @@
 <template>
-  <form class="t-form">
+  <form class="t-form"
+        v-bind="$attrs"
+        v-on="$listeners">
     <transition name="t-form-fade">
       <t-loader v-if="isPending"
                 size="large" />

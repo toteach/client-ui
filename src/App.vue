@@ -84,6 +84,9 @@
                        icon="logo-square" />
             </t-input-field>
           </t-form-fieldset>
+          <t-form-fieldset>
+            <t-button native-type="submit">Submit Form</t-button>
+          </t-form-fieldset>
         </t-form>
       </div>
     </section>
@@ -296,6 +299,7 @@ import {
 
 import TFormFieldset from '@/components/form/form-fieldset.vue';
 import TForm from '@/components/form/form.vue';
+import TButton from "@/components/button/button.vue";
 
 interface DemoListItem {
   id: number;
@@ -306,7 +310,7 @@ interface DemoListItem {
 
 @Component({
   name: 'app',
-  components: { TFormFieldset, TForm },
+  components: {TButton, TFormFieldset, TForm },
 })
 
 export default class App extends Vue {
