@@ -14,7 +14,7 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
-import TLoader from '@/components/spinner/loader.vue';
+import TLoader from '../spinner/loader.vue';
 
 @Component({
   name: 'TForm',
