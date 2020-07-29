@@ -4,9 +4,10 @@
              :class="{
                [`t-button_icon-position_${iconPosition}`]: iconPosition,
                [`t-button_size_${size}`]: size,
-               [`t-button_is_outlined`]: isOutlined,
                [`t-button_type_${type}`]: type,
                [`t-button_state_${state}`]: state,
+               [`t-button_is_outlined`]: isOutlined,
+               [`t-button_is_block`]: isBlock,
                [`t-button_is_pending`]: isPending,
              }"
              :type="nativeType"
@@ -71,6 +72,9 @@ export default class TButton extends Vue {
 
   @Prop({ type: Boolean })
   public isOutlined?: boolean;
+
+  @Prop({ type: Boolean })
+  public isBlock?: boolean;
 
   get computedTag(): ButtonLinkTags {
     const defaultTag = this.tag || 'button';
@@ -270,6 +274,11 @@ export default class TButton extends Vue {
         --button-background-color: var(--color-primary);
       }
     }
+  }
+
+  &_is_block {
+    display: block;
+    width: 100%;
   }
 
   &_size {

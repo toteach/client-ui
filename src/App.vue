@@ -131,11 +131,15 @@
             Success Normal Button
           </t-button>
           <t-button type="primary"
-                    is-outlined="true">
+                    :is-outlined="true">
             Outlined Primary Button
           </t-button>
           <t-button type="link">
             Link Button
+          </t-button>
+          <t-button type="primary"
+                    :is-block="true">
+            Button Block
           </t-button>
         </div>
       </div>

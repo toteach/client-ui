@@ -6,6 +6,7 @@ import {
   Calendar,
   Card,
   Dropdown,
+  Form,
   Icon,
   Input,
   ListView,
@@ -21,6 +22,7 @@ const ToTeach = {
     Vue.use(Card);
     Vue.use(Button);
     Vue.use(Dropdown);
+    Vue.use(Form);
     Vue.use(Icon);
     Vue.use(Input);
     Vue.use(ListView);

@@ -18,13 +18,13 @@ export {
   Card,
   Button,
   Dropdown,
+  Form,
   Icon,
   Input,
   ListView,
   Pagination,
   ProgressBarRadial,
   Spinner,
-  Form,
 };
 
 
