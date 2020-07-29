@@ -35,6 +35,7 @@ export default class TLoader extends Vue {
     --spinner-size: 1rem;
 
     position: absolute;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
