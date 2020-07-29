@@ -4,11 +4,13 @@ import Calendar from './calendar/index';
 import Card from './card/index';
 import ProgressBarRadial from './charts/progress-bar-radial/index';
 import Dropdown from './dropdown/index';
+import Form from './form/index';
 import Icon from './icon/index';
 import Input from './input/index';
 import ListView from './listview/index';
 import Pagination from './pagination/index';
 import Spinner from './spinner/index';
+
 
 export {
   Avatar,
@@ -22,6 +24,7 @@ export {
   Pagination,
   ProgressBarRadial,
   Spinner,
+  Form,
 };
 
 

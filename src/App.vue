@@ -47,40 +47,44 @@
         Inputs
       </h2>
       <div class="app__section-content">
-        <t-input-field type="danger">
-          <t-input type="search"
-                   size="large"
-                   :placeholder="`Placeholder`"
-                   icon-position="left"
-                   icon="logo-square" />
-        </t-input-field>
-        <t-input-field type="danger">
-          <t-input type="search"
-                   size="medium"
-                   :placeholder="`Placeholder`"
-                   icon-position="left"
-                   icon="logo-square" />
-        </t-input-field>
-        <t-input-field type="danger">
-          <t-input type="search"
-                   :placeholder="`Placeholder`"
-                   icon-position="left"
-                   icon="logo-square" />
-        </t-input-field>
-        <t-input-field type="danger">
-          <t-input type="search"
-                   size="small"
-                   :placeholder="`Placeholder`"
-                   icon-position="left"
-                   icon="logo-square" />
-        </t-input-field>
-        <t-input-field :label="`Input label`">
-          <t-input type="email"
-                   size="medium"
-                   :placeholder="`Placeholder`"
-                   icon-position="left"
-                   icon="logo-square" />
-        </t-input-field>
+        <t-form>
+          <t-form-fieldset>
+            <t-input-field type="danger">
+              <t-input type="search"
+                       size="large"
+                       :placeholder="`Placeholder`"
+                       icon-position="left"
+                       icon="logo-square" />
+            </t-input-field>
+            <t-input-field type="danger">
+              <t-input type="search"
+                       size="medium"
+                       :placeholder="`Placeholder`"
+                       icon-position="left"
+                       icon="logo-square" />
+            </t-input-field>
+            <t-input-field type="danger">
+              <t-input type="search"
+                       :placeholder="`Placeholder`"
+                       icon-position="left"
+                       icon="logo-square" />
+            </t-input-field>
+            <t-input-field type="danger">
+              <t-input type="search"
+                       size="small"
+                       :placeholder="`Placeholder`"
+                       icon-position="left"
+                       icon="logo-square" />
+            </t-input-field>
+            <t-input-field :label="`Input label`">
+              <t-input type="email"
+                       size="medium"
+                       :placeholder="`Placeholder`"
+                       icon-position="left"
+                       icon="logo-square" />
+            </t-input-field>
+          </t-form-fieldset>
+        </t-form>
       </div>
     </section>
 
@@ -286,6 +290,9 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
+import TFormFieldset from '@/components/form/form-fieldset.vue';
+import TForm from '@/components/form/form.vue';
+
 interface DemoListItem {
   id: number;
   first_name: string;
@@ -295,6 +302,7 @@ interface DemoListItem {
 
 @Component({
   name: 'app',
+  components: { TFormFieldset, TForm },
 })
 
 export default class App extends Vue {
