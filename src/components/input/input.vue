@@ -46,6 +46,7 @@ type InputNativeTypes =
 
 @Component({
   name: 'TInput',
+  inheritAttrs: false,
   components: { TIcon },
 })
 export default class TInput extends Vue {
@@ -92,6 +93,12 @@ export default class TInput extends Vue {
   --input-focus-border-color: var(--color-primary);
   --input-focus-box-shadow-size: 0 0 5px 2px;
   --input-focus-box-shadow-color: var(--blue-bis-a-20);
+
+  // Danger
+  --input-danger-background-color: var(--white);
+  --input-danger-border-color: var(--color-danger);
+  --input-danger-box-shadow-size: 0 0 5px 2px;
+  --input-danger-box-shadow-color: var(--blue-bis-a-20);
 
   // Disabled
   --input-disabled-background-color: var(--grey-lighter);

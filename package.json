@@ -1,7 +1,7 @@
 {
   "name": "@toteach/ui",
   "description": "Lightweight UI components",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "author": "toteach.io",
   "bugs": {
@@ -37,6 +37,7 @@
     "json-ref-lite": "^1.1.0",
     "json-templater": "^1.2.0",
     "minireset.css": "0.0.6",
+    "vee-validate": "^3.3.8",
     "vue": "~2.6.10",
     "vue-class-component": "^7.1.0",
     "vue-i18n": "^8.3.2",

@@ -12,6 +12,9 @@
     <template v-else>
       <slot />
     </template>
+    <template v-if="hasMessages">
+      <span class="t-input-field__message">{{ message }}</span>
+    </template>
   </div>
 </template>
 
@@ -35,7 +38,19 @@ export default class TInputField extends Vue {
   public label?: string;
 
   @Prop({ type: String })
+  public messages?: string[];
+
+  @Prop({ type: String })
   public type?: TColorModifiers;
+
+  public get hasMessages(): boolean {
+    return !!(this.messages && this.messages.length);
+  }
+
+  public get message(): string {
+    return this.messages && this.messages.length ? this.messages.join() : '';
+  }
+
 }
 </script>
 
@@ -52,7 +67,7 @@ export default class TInputField extends Vue {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: var(--spacing);
+  margin-bottom: 2rem;
 
   &__label {
     display: block;
@@ -62,6 +77,26 @@ export default class TInputField extends Vue {
       display: block;
       margin-bottom: var(--input-filed-label-spacing);
       color: var(--input-filed-label-color);
+    }
+  }
+
+  &__message {
+    position: absolute;
+    bottom: calc(-1rem - 5px);
+    font-size: var(--size-7);
+  }
+
+  &_has_message {
+    // margin-bottom: var(--spacing-large);
+  }
+
+  &_type {
+    &_danger {
+      .t-control {
+        --input-border-color: var(--color-danger);
+        --input-focus-border-color: var(--color-danger);
+        --input-focus-box-shadow-color: var(--red-a-20);
+      }
     }
   }
 

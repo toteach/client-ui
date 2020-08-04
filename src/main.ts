@@ -5,6 +5,7 @@ import Vue, {
 
 import App from '@/App.vue';
 import '@/plugins/toteach';
+import '@/plugins/vee-validate';
 import {
   router,
 } from '@/plugins/vue-router';

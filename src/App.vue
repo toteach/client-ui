@@ -47,47 +47,66 @@
         Inputs
       </h2>
       <div class="app__section-content">
-        <t-form>
-          <t-form-fieldset>
-            <t-input-field type="danger">
-              <t-input type="search"
-                       size="large"
-                       :placeholder="`Placeholder`"
-                       icon-position="left"
-                       icon="logo-square" />
-            </t-input-field>
-            <t-input-field type="danger">
-              <t-input type="search"
-                       size="medium"
-                       :placeholder="`Placeholder`"
-                       icon-position="left"
-                       icon="logo-square" />
-            </t-input-field>
-            <t-input-field type="danger">
-              <t-input type="search"
-                       :placeholder="`Placeholder`"
-                       icon-position="left"
-                       icon="logo-square" />
-            </t-input-field>
-            <t-input-field type="danger">
-              <t-input type="search"
-                       size="small"
-                       :placeholder="`Placeholder`"
-                       icon-position="left"
-                       icon="logo-square" />
-            </t-input-field>
-            <t-input-field :label="`Input label`">
-              <t-input type="email"
-                       size="medium"
-                       :placeholder="`Placeholder`"
-                       icon-position="left"
-                       icon="logo-square" />
-            </t-input-field>
-          </t-form-fieldset>
-          <t-form-fieldset>
-            <t-button native-type="submit">Submit Form</t-button>
-          </t-form-fieldset>
-        </t-form>
+        <ValidationObserver v-slot="{ handleSubmit }">
+          <t-form autocomplete="off"
+                  class="form-login"
+                  :class="{
+                    [`form-login_is_pending`]: isFormPending,
+                  }"
+                  :is-pending="isFormPending"
+                  novalidate
+                  @submit.prevent="handleSubmit(submit)">
+            <t-form-fieldset>
+              <ValidationProvider v-slot="{ errors }"
+                                  rules="required|email">
+                <t-input-field :type="errors.length ? 'danger' : null"
+                               :messages="errors">
+                  <t-input v-model="email"
+                           type="email"
+                           size="large"
+                           placeholder="Enter Email"
+                           icon-position="right"
+                           icon="logo-square" />
+                </t-input-field>
+              </ValidationProvider>
+
+              <t-input-field type="danger">
+                <t-input type="search"
+                         size="medium"
+                         :placeholder="`Placeholder`"
+                         icon-position="left"
+                         icon="logo-square" />
+              </t-input-field>
+              <t-input-field type="danger">
+                <t-input type="search"
+                         :placeholder="`Placeholder`"
+                         icon-position="left"
+                         icon="logo-square" />
+              </t-input-field>
+              <t-input-field type="danger">
+                <t-input type="search"
+                         size="small"
+                         :placeholder="`Placeholder`"
+                         icon-position="left"
+                         icon="logo-square" />
+              </t-input-field>
+              <t-input-field :label="`Input label`">
+                <t-input type="email"
+                         size="medium"
+                         :placeholder="`Placeholder`"
+                         icon-position="left"
+                         icon="logo-square" />
+              </t-input-field>
+            </t-form-fieldset>
+            <t-form-fieldset>
+              <t-button type="primary"
+                        native-type="submit"
+                        is-block>
+                Submit Form
+              </t-button>
+            </t-form-fieldset>
+          </t-form>
+        </ValidationObserver>
       </div>
     </section>
 
@@ -297,9 +316,9 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
+import TButton from '@/components/button/button.vue';
 import TFormFieldset from '@/components/form/form-fieldset.vue';
 import TForm from '@/components/form/form.vue';
-import TButton from "@/components/button/button.vue";
 
 interface DemoListItem {
   id: number;
@@ -310,10 +329,17 @@ interface DemoListItem {
 
 @Component({
   name: 'app',
-  components: {TButton, TFormFieldset, TForm },
+  components: { TButton, TFormFieldset, TForm },
 })
 
 export default class App extends Vue {
+
+  public isFormPending: boolean = false;
+
+  public password: string = '';
+
+  public email: string = '';
+
   get listViewData(): DemoListItem[] {
     return [
       {
@@ -335,6 +361,13 @@ export default class App extends Vue {
         date: '2016-04-26 06:26:28',
       },
     ];
+  }
+
+  public submit(): void {
+    this.isFormPending = true;
+    setTimeout(() => {
+      this.isFormPending = false;
+    }, 5000);
   }
 }
 
