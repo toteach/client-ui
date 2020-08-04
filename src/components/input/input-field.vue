@@ -61,13 +61,14 @@ export default class TInputField extends Vue {
 
   --input-filed-label-color: var(--grey-darker);
   --input-filed-label-spacing: 0.3em;
+  --input-filed-margin: 1.75rem;
 
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: var(--input-filed-margin);
 
   &__label {
     display: block;
@@ -86,12 +87,12 @@ export default class TInputField extends Vue {
     font-size: var(--size-7);
   }
 
-  &_has_message {
-    // margin-bottom: var(--spacing-large);
-  }
-
   &_type {
     &_danger {
+      #{$root}__message {
+        color: var(--color-danger);
+      }
+
       .t-control {
         --input-border-color: var(--color-danger);
         --input-focus-border-color: var(--color-danger);
